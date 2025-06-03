@@ -8,14 +8,11 @@
 # # [] => []
 # # [12, 3, 4, 10, 8] => [8, 12, 3, 4, 10]
 
-user_list = [12, 3, 4, 10]
-print(f"{user_list[3:] + user_list[:3]}")
 
-user_list = [1] # Или оставляем пустое значение и получаем решение
+user_list = [12, 3, 4, 10]  # Можна змінювати для перевірки
+
 if len(user_list) > 1:
     user_list = [user_list[-1]] + user_list[:-1]
+
 print(user_list)
 
-new_list = [12, 3, 4, 10, 8]
-new_list_user = [new_list[4]] + new_list[0:4]
-print(new_list_user)
